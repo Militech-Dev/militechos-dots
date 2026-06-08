@@ -1,0 +1,90 @@
+* {
+    font-family: "DejaVu Sans Mono", "Symbols Nerd Font Mono";
+    font-size: 13px;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+window#waybar {
+    background-color: #0A0A0A;
+    border-bottom: 2px solid #F5C400;
+    color: #F5C400;
+}
+
+/* Workspaces */
+#workspaces button {
+    padding: 0 10px;
+    background: transparent;
+    color: #555555;
+    border-bottom: 2px solid transparent;
+}
+
+#workspaces button.focused {
+    color: #F5C400;
+    border-bottom: 2px solid #F5C400;
+}
+
+#workspaces button.urgent {
+    color: #FF3300;
+    border-bottom: 2px solid #FF3300;
+}
+
+#workspaces button:hover {
+    background: #1A1A1A;
+    color: #F5C400;
+}
+
+/* Center clock */
+#clock {
+    color: #F5C400;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 0 16px;
+}
+
+/* Right modules */
+#network,
+#pulseaudio,
+#cpu,
+#memory,
+#battery,
+#tray {
+    padding: 0 12px;
+    color: #F5C400;
+    border-left: 1px solid #1A1A1A;
+}
+
+/* Warning / critical states */
+#battery.warning {
+    color: #FFA500;
+}
+
+#battery.critical {
+    color: #FF3300;
+    animation: blink 1s steps(1) infinite;
+}
+
+#network.disconnected {
+    color: #FF3300;
+}
+
+@keyframes blink {
+    to { color: #0A0A0A; background: #FF3300; }
+}
+
+/* Mode indicator (RESIZE etc) */
+#mode {
+    background: #F5C400;
+    color: #0A0A0A;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+#custom-power {
+		padding: 0 12px;
+		color: #F5C400;
+		border-left: 1px solid #1A1A1A;
+}

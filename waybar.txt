@@ -1,0 +1,75 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 32,
+    "spacing": 4,
+ 
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-center": ["clock"],
+    "modules-right": ["network", "pulseaudio", "cpu", "memory", "battery", "tray", "custom/power"],
+ 
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{name}"
+    },
+ 
+    "sway/mode": {
+        "format": "!! {}"
+    },
+ 
+    "clock": {
+        "format": "[{:%H:%M  %d %b %Y}]",
+        "tooltip-format": "<big>{:%A}</big>\n<tt>{calendar}</tt>",
+        "interval": 1
+    },
+ 
+    "network": {
+        "format-wifi": "NET {essid} {signalStrength}%",
+        "format-ethernet": "ETH {ipaddr}",
+        "format-disconnected": "!! OFFLINE",
+        "tooltip-format": "{ifname}: {ipaddr}\n{essid}",
+        "interval": 5
+    },
+ 
+    "pulseaudio": {
+        "format": "VOL {volume}%",
+        "format-muted": "VOL MUTED",
+        "on-click": "pavucontrol",
+        "scroll-step": 5
+    },
+ 
+    "cpu": {
+        "format": "CPU {usage}%",
+        "interval": 2,
+        "tooltip": false
+    },
+ 
+    "memory": {
+        "format": "MEM {percentage}%",
+        "interval": 5,
+        "tooltip-format": "{used:0.1f}G / {total:0.1f}G"
+    },
+ 
+    "battery": {
+        "format": "BAT {capacity}%",
+        "format-charging": "CHR {capacity}%",
+        "format-full": "BAT FULL",
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "interval": 30
+    },
+ 
+    "tray": {
+        "spacing": 8,
+        "icon-size": 16
+    },
+ 
+    "custom/power": {
+        "format": "[PWR]",
+        "on-click": "swaynag -t warning -m 'SHUTDOWN MilitechOS?' -b 'SHUTDOWN' 'systemctl poweroff' -b 'REBOOT' 'systemctl reboot'",
+        "tooltip": false
+    }
+}

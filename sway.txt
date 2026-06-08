@@ -1,0 +1,180 @@
+# ╔══════════════════════════════════════╗
+# ║        MilitechOS - Sway Config      ║
+# ║        Black & Yellow / Tactical     ║
+# ╚══════════════════════════════════════╝
+
+# ── Core ─────────────────────────────────
+set $mod Mod4
+set $term kitty
+set $menu wofi --show drun --style ~/.config/wofi/style.css
+xwayland enable
+
+# ── Output / Wallpaper ────────────────────
+exec_always swaybg -c 000000
+
+# ── Gaps & Borders ───────────────────────
+gaps inner 8
+gaps outer 12
+default_border normal 2
+default_floating_border normal 2
+smart_gaps on
+smart_borders on
+
+# ── Colors (black/yellow) ────────────────
+# class                 border    bg        text      indicator child_border
+client.focused          #F5C400   #0A0A0A   #F5C400   #F5C400   #F5C400
+client.focused_inactive #1A1A1A   #0A0A0A   #555555   #1A1A1A   #1A1A1A
+client.unfocused        #111111   #0A0A0A   #333333   #111111   #111111
+client.urgent           #FF3300   #0A0A0A   #FF3300   #FF3300   #FF3300
+
+# ── Font ─────────────────────────────────
+font pango:DejaVu Sans Mono 10
+
+# ── Input ────────────────────────────────
+input "type:keyboard" {
+    xkb_options caps:escape
+}
+input "type:touchpad" {
+    tap enabled
+    natural_scroll enabled
+    dwt enabled
+}
+
+# ── Seat ─────────────────────────────────
+seat seat0 xcursor_theme Adwaita 24
+
+# ── Key Bindings ─────────────────────────
+
+# Terminal
+bindsym $mod+Return exec $term
+
+# Launcher
+bindsym $mod+d exec $menu
+
+bindsym $mod+m exec python3 ~/.config/militechos/mission-menu.py
+
+# Kill focused window
+bindsym $mod+Shift+q kill
+
+# Reload / Restart
+bindsym $mod+Shift+r reload
+
+# Exit sway
+bindsym $mod+Shift+e exec swaynag -t warning \
+    -m 'EXIT MilitechOS?' \
+    -b 'CONFIRM' 'swaymsg exit'
+
+# Screenshots
+bindsym Print exec grim ~/Pictures/screenshot-$(date +%Y%m%d-%H%M%S).png
+bindsym $mod+Print exec grim -g "$(slurp)" ~/Pictures/screenshot-$(date +%Y%m%d-%H%M%S).png
+
+# Volume
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+# Brightness (install brightnessctl if needed)
+bindsym XF86MonBrightnessUp exec brightnessctl set +10%
+bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
+
+# Focus movement (vim keys + arrows)
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# Move windows
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# Splits
+bindsym $mod+b splith
+bindsym $mod+v splitv
+
+# Layout toggle
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# Fullscreen
+bindsym $mod+f fullscreen toggle
+
+# Floating toggle
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+space focus mode_toggle
+
+# Sticky (float on all workspaces)
+bindsym $mod+Shift+s sticky toggle
+
+# Thunar File Manager
+bindsym $mod+t exec thunar
+
+# ── Workspaces ───────────────────────────
+set $ws1  "1:OPS"
+set $ws2  "2:COMMS"
+set $ws3  "3:NAV"
+set $ws4  "4:INTEL"
+set $ws5  "5:SYS"
+set $ws6  "6"
+set $ws7  "7"
+set $ws8  "8"
+set $ws9  "9"
+set $ws10 "10"
+
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws10
+
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws10
+
+# ── Floating Rules ───────────────────────
+for_window [app_id="pavucontrol"] floating enable, resize set 600 400
+for_window [app_id="nm-connection-editor"] floating enable
+for_window [title="MilitechOS - Float"] floating enable
+
+# ── Resize Mode ──────────────────────────
+mode "RESIZE" {
+    bindsym h resize shrink width 20px
+    bindsym j resize grow height 20px
+    bindsym k resize shrink height 20px
+    bindsym l resize grow width 20px
+    bindsym Left resize shrink width 20px
+    bindsym Down resize grow height 20px
+    bindsym Up resize shrink height 20px
+    bindsym Right resize grow width 20px
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+r mode "RESIZE"
+
+# ── Autostart ────────────────────────────
+exec_always pkill waybar; waybar &
+exec /usr/lib/polkit-kde-authentication-agent-1
+exec nm-applet --indicator
+exec xhost +local:
