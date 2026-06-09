@@ -118,7 +118,6 @@ Custom fastfetch configuration showing:
 | `plymouthd.conf` | Plymouth daemon config with SimplesDRM for broad hardware support |
 | `grub-default` | GRUB bootloader configuration |
 | `sddm.conf` | SDDM display manager config pointing to militech theme |
-| `os-release` | MilitechOS branding — replaces Arch Linux references |
 | `packages.txt` | Full package list for Survival Edition |
 | `gnome-extensions.txt` | List of installed GNOME extensions |
 | `wallpaper.webp` | Default desktop wallpaper |
@@ -149,7 +148,7 @@ Custom fastfetch configuration showing:
 | Component | Minimum | Recommended |
 |-----------|---------|-------------|
 | RAM | 4GB | 8GB |
-| Storage | 40GB | 60GB |
+| Storage | 25GB | 35+GB |
 | CPU | x86_64 dual core 2GHz | x86_64 quad core |
 | GPU | Any with KMS/DRM support | AMD or Intel |
 | Boot | UEFI | UEFI |
@@ -226,7 +225,6 @@ sudo cp kernel-cmdline.txt /etc/kernel/cmdline
 sudo cp plymouthd.conf /etc/plymouth/plymouthd.conf
 sudo cp grub-default /etc/default/grub
 sudo cp sddm.conf /etc/sddm.conf
-sudo cp os-release /etc/os-release
 sudo mkinitcpio -P
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
