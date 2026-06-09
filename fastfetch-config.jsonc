@@ -1,0 +1,31 @@
+{
+    "modules": [
+        "Title",
+        "Separator",
+        "OS",
+        "Kernel",
+        "Uptime",
+        "Packages",
+        "Shell",
+        "WM",
+        "Terminal",
+	"Font",
+	"Cursor",
+	"Weather",
+        "Separator",
+        "CPU",
+        "GPU",
+        "Memory",
+        "Swap",
+        "Disk",
+	"Sound",
+        "Separator",
+        "LocalIp",
+        "Wifi",
+        "Separator",
+        "Battery",
+        "PowerAdapter",
+        "Separator",
+        "Colors"
+    ]
+}
