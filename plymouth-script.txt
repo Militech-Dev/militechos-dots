@@ -1,0 +1,24 @@
+screen_width = Window.GetWidth();
+screen_height = Window.GetHeight();
+
+num_frames = 154;
+frame_delay = 1000 / 24;
+
+for (i = 1; i <= num_frames; i++) {
+    frame[i] = Image("frames/frame-" + String.Sprintf("%04d", i) + ".png");
+}
+
+sprite = Sprite();
+sprite.SetX(0);
+sprite.SetY(0);
+sprite.SetZ(0);
+
+current_frame = 1;
+
+fun refresh_callback() {
+    sprite.SetImage(frame[current_frame]);
+    if (current_frame < num_frames)
+        current_frame++;
+}
+
+Plymouth.SetRefreshFunction(refresh_callback);

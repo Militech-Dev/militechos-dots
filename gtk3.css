@@ -1,0 +1,11 @@
+@define-color accent_color #FFD300;
+@define-color theme_fg_color #FFD300;
+@define-color theme_bg_color #0a0a08;
+@define-color theme_base_color #0f0f0b;
+@define-color theme_text_color #FFD300;
+@define-color theme_selected_bg_color #FFD300;
+@define-color theme_selected_fg_color #000000;
+@define-color insensitive_bg_color #1a1a00;
+@define-color insensitive_fg_color #7a6a00;
+@define-color theme_unfocused_fg_color #FFD300;
+@define-color theme_unfocused_bg_color #0a0a08;

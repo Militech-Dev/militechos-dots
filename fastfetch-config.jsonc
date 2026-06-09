@@ -1,0 +1,40 @@
+{
+    "logo": {
+        "source": "/home/exec/.config/fastfetch/militech.txt",
+        "color": {
+            "1": "38;2;255;211;0"
+        }
+    },
+    "display": {
+        "color": "38;2;255;211;0"
+    },
+    "modules": [
+        "Title",
+        "Separator",
+        "OS",
+        "Kernel",
+        "Uptime",
+        "Packages",
+        "Shell",
+        "WM",
+        "Terminal",
+        "Font",
+        "Cursor",
+        "Weather",
+        "Separator",
+        "CPU",
+        "GPU",
+        "Memory",
+        "Swap",
+        "Disk",
+        "Sound",
+        "Separator",
+        "LocalIp",
+        "Wifi",
+        "Separator",
+        "Battery",
+        "PowerAdapter",
+        "Separator",
+        "Colors"
+    ]
+}

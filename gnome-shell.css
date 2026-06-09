@@ -1,0 +1,22 @@
+#panel {
+    background-color: #0a0a08;
+    border-bottom: 1px solid #FFD300;
+}
+
+#panel .panel-button {
+    color: #FFD300;
+}
+
+#panel .panel-button:hover {
+    background-color: #1a1500;
+    color: #FFD300;
+}
+
+.system-status-icon {
+    color: #FFD300;
+}
+
+.clock {
+    color: #FFD300;
+    font-weight: bold;
+}

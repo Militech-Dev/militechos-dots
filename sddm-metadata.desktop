@@ -1,0 +1,9 @@
+[SddmGreeterTheme]
+Name=Militech
+Description=MilitechOS Login Theme
+Author=Militech-Dev
+License=CC BY-NC-SA 4.0
+Type=sddm-theme
+Version=1.0
+Website=https://github.com/Militech-Dev
+QtVersion=6

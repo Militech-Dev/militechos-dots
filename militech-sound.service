@@ -1,0 +1,14 @@
+[Unit]
+Description=MilitechOS Boot Sound
+After=sound.target pipewire.service
+Wants=pipewire.service
+
+[Service]
+Type=oneshot
+ExecStartPre=/usr/bin/sleep 1
+ExecStart=/usr/bin/paplay /usr/share/plymouth/themes/militech/militech-boot.ogg
+User=exec
+Environment=XDG_RUNTIME_DIR=/run/user/1000
+
+[Install]
+WantedBy=sddm.service

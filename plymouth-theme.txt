@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=MilitechOS
+Description=MilitechOS Boot Animation
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/militech
+ScriptFile=/usr/share/plymouth/themes/militech/militech.script

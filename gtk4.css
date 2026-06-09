@@ -1,0 +1,26 @@
+@define-color accent_color #FFD300;
+@define-color accent_bg_color #FFD300;
+@define-color accent_fg_color #000000;
+@define-color window_bg_color #0a0a08;
+@define-color window_fg_color #FFD300;
+@define-color view_bg_color #0f0f0b;
+@define-color view_fg_color #FFD300;
+@define-color headerbar_bg_color #0c0c09;
+@define-color headerbar_fg_color #FFD300;
+@define-color card_bg_color #0f0f0b;
+@define-color card_fg_color #FFD300;
+@define-color dialog_bg_color #0a0a08;
+@define-color dialog_fg_color #FFD300;
+@define-color popover_bg_color #0f0f0b;
+@define-color popover_fg_color #FFD300;
+@define-color sidebar_bg_color #0c0c09;
+@define-color sidebar_fg_color #FFD300;
+
+switch:checked {
+    background-color: #FFD300;
+    color: #000000;
+}
+
+switch slider {
+    background-color: #000000;
+}
