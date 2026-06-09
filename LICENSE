@@ -1,0 +1,242 @@
+================================================================================
+                         MILITECHOS LICENSE AGREEMENT
+                              Version 1.0 — 2026
+================================================================================
+
+Copyright (c) 2026 Militech-Dev
+https://github.com/Militech-Dev
+
+This license governs all editions of MilitechOS including but not limited to
+the Survival Edition and the Operator Edition.
+
+================================================================================
+PART I — CODE AND SOFTWARE LICENSE
+================================================================================
+
+The source code, configurations, themes, scripts, installer, and all original
+software components of MilitechOS are licensed under the Creative Commons
+Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)
+
+You are free to:
+  · Use and modify this project for personal, non-commercial purposes
+  · Share and redistribute with proper credit
+  · Build upon this work under the same license terms
+
+Under these conditions:
+  · ATTRIBUTION    — Credit must be given to Militech-Dev in all copies,
+                     derivatives, and distributions
+  · NON-COMMERCIAL — No commercial use permitted under any circumstances
+  · SHARE-ALIKE    — All derivatives must be released under this same license
+  · NO ADDITIONAL RESTRICTIONS — You may not apply legal terms or technological
+                     measures that restrict others from doing what this license
+                     permits
+
+Full license text: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+================================================================================
+PART II — DISCLAIMER OF WARRANTIES
+================================================================================
+
+MILITECHOS IS PROVIDED WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW:
+
+  · Militech-Dev makes no warranties, representations, or guarantees of any
+    kind, either express or implied, regarding MilitechOS or any software,
+    tools, or content included within it.
+
+  · Militech-Dev does not warrant that MilitechOS will be error-free,
+    uninterrupted, or completely secure.
+
+  · Militech-Dev does not warrant that MilitechOS is fit for any particular
+    purpose or use case.
+
+  · MilitechOS is provided to you at no cost and you use it entirely at
+    your own risk. If something does not work as expected, you are free
+    to stop using it. That is your sole remedy.
+
+================================================================================
+PART III — LIMITATION OF LIABILITY
+================================================================================
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL
+MILITECH-DEV, ITS CONTRIBUTORS, OR AFFILIATES BE LIABLE FOR ANY:
+
+  · Direct, indirect, incidental, special, exemplary, or consequential damages
+  · Loss of data, profits, revenue, business, or goodwill
+  · Personal injury or property damage of any nature
+  · Unauthorized access to or alteration of your systems or data
+  · Statements or conduct of any third party
+  · Any other matter relating to MilitechOS
+
+THIS LIMITATION APPLIES WHETHER THE CLAIM IS BASED ON WARRANTY, CONTRACT,
+TORT, NEGLIGENCE, STRICT LIABILITY, OR ANY OTHER LEGAL THEORY, EVEN IF
+MILITECH-DEV HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+IF YOU ARE DISSATISFIED WITH MILITECHOS, YOUR SOLE REMEDY IS TO STOP USING IT.
+
+================================================================================
+PART IV — USER RESPONSIBILITY AND ACCEPTABLE USE
+================================================================================
+
+By installing, using, or distributing MilitechOS, you agree that:
+
+  1. LEGAL COMPLIANCE
+     You are solely and entirely responsible for ensuring your use of
+     MilitechOS and all included software complies with all applicable local,
+     national, and international laws and regulations in your jurisdiction.
+
+  2. SECURITY AND RESEARCH TOOLS
+     MilitechOS includes network analysis, security research, and penetration
+     testing tools (including but not limited to Wireshark, Nmap, Aircrack-ng,
+     and related utilities). These tools are provided exclusively for:
+       · Legal security research
+       · Authorized penetration testing
+       · Educational and academic purposes
+       · Testing systems you own or have explicit written permission to test
+
+     USE OF THESE TOOLS AGAINST SYSTEMS YOU DO NOT OWN OR DO NOT HAVE
+     EXPLICIT AUTHORIZATION TO TEST IS ILLEGAL IN MOST JURISDICTIONS AND
+     IS STRICTLY PROHIBITED. Militech-Dev accepts zero responsibility for
+     any illegal use of security tools included in MilitechOS.
+
+  3. RADIO AND COMMUNICATIONS TOOLS
+     MilitechOS includes radio communication software (including but not
+     limited to Direwolf, WSJTX, JS8Call, GQRX, and related utilities).
+     You are solely responsible for:
+       · Obtaining all required licenses and permits for radio transmission
+         in your jurisdiction (e.g. amateur radio license, FCC license)
+       · Complying with all applicable radio frequency regulations
+       · Ensuring your radio use does not interfere with licensed services
+
+     Militech-Dev accepts no responsibility for unlicensed or illegal
+     radio transmissions made using tools included in MilitechOS.
+
+  4. PRIVACY AND ANONYMITY TOOLS
+     MilitechOS includes privacy tools (including but not limited to
+     Tor Browser, VeraCrypt, and related utilities). These tools are
+     provided for legitimate privacy protection. You are solely responsible
+     for ensuring your use of these tools complies with applicable law.
+
+  5. GPS AND LOCATION TOOLS
+     GPS and mapping tools included in MilitechOS are provided for
+     navigation and research purposes only. Any use for stalking,
+     surveillance, or harassment is strictly prohibited and illegal.
+
+  6. DATA AND SYSTEM RESPONSIBILITY
+     You are solely responsible for backing up your data before installing
+     or using MilitechOS. Militech-Dev accepts no responsibility for any
+     data loss, system damage, or hardware failure resulting from the
+     installation or use of MilitechOS.
+
+  7. SURVIVAL AND INFORMATIONAL CONTENT
+     Any survival, medical, navigational, or informational content included
+     in or accessible through MilitechOS is provided for educational purposes
+     only. It does not constitute professional advice. Always consult qualified
+     professionals for medical, legal, safety, or survival decisions.
+     Militech-Dev accepts no responsibility for decisions made based on
+     information accessed through MilitechOS.
+
+================================================================================
+PART V — EXPORT CONTROL
+================================================================================
+
+MilitechOS includes cryptographic and security software that may be subject
+to export control laws and regulations. This is because encryption software
+is legally restricted from being distributed to certain countries and
+individuals under US law (applicable due to GitHub's US jurisdiction) and
+other international regulations.
+
+By downloading, installing, or using MilitechOS, you confirm that:
+
+  · You are not located in a country currently subject to international
+    embargo or comprehensive trade restrictions
+  · You are not listed on any government denied-parties, sanctions, or
+    restricted entities list
+  · You will comply with all applicable export control laws and regulations
+    in your country and internationally
+
+If you are unsure whether these restrictions apply to you, do not download
+or use MilitechOS.
+
+================================================================================
+PART VI — THIRD PARTY SOFTWARE
+================================================================================
+
+MilitechOS includes third-party software packages distributed under their
+own respective licenses. Each third-party component retains its original
+license. Militech-Dev makes no additional warranty claims regarding
+third-party software beyond what their respective licenses provide.
+
+Users are responsible for reviewing and complying with the licenses of all
+third-party software included in MilitechOS.
+
+================================================================================
+PART VII — THIRD PARTY INTELLECTUAL PROPERTY
+================================================================================
+
+MilitechOS is a non-commercial fan project inspired by the Cyberpunk universe.
+The following trademarks, copyrights, and intellectual property used in the
+aesthetic, branding, and theming of this project belong entirely to their
+respective owners:
+
+  CD PROJEKT RED
+  Cyberpunk 2077 © 2020 CD Projekt Red
+  All rights reserved — https://www.cdprojektred.com
+
+  R. TALSORIAN GAMES
+  Cyberpunk tabletop RPG © 1988 R. Talsorian Games
+  All rights reserved — https://rtalsoriangames.com
+
+MilitechOS is:
+  · Not affiliated with, endorsed by, or sponsored by CD Projekt Red or
+    R. Talsorian Games
+  · Not sold or monetized in any way
+  · A fan project created out of appreciation for the Cyberpunk universe
+
+All Cyberpunk universe names, logos, characters, lore, and trademarks
+remain the exclusive property of their respective owners. If you are a
+rights holder and have concerns regarding this project, please contact
+us at https://github.com/Militech-Dev before taking any legal action.
+
+================================================================================
+PART VIII — JURISDICTION AND GOVERNING LAW
+================================================================================
+
+This license shall be governed by and construed in accordance with
+internationally recognized principles of open source software licensing.
+
+This approach is intentional — MilitechOS is a global project used by people
+in many countries. Rather than limiting disputes to one jurisdiction, this
+license is designed to be enforceable across multiple legal systems to the
+maximum extent possible.
+
+If any provision of this license is found to be unenforceable under
+applicable law in any jurisdiction, that provision shall be modified to the
+minimum extent necessary to make it enforceable in that jurisdiction, and
+the remaining provisions shall continue in full force and effect everywhere.
+
+================================================================================
+PART IX — CHANGES TO THIS LICENSE
+================================================================================
+
+Militech-Dev reserves the right to update this license for future versions
+of MilitechOS. This allows us to close legal gaps, respond to changes in
+applicable law, or improve protections for both users and developers.
+
+Previous versions of MilitechOS will always retain the license under which
+they were originally released. No license change will apply retroactively
+to already-released versions.
+
+================================================================================
+PART X — CONTACT
+================================================================================
+
+For licensing inquiries, rights holder concerns, or other legal matters:
+https://github.com/Militech-Dev
+
+================================================================================
+                    END OF MILITECHOS LICENSE AGREEMENT
+================================================================================
