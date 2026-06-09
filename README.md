@@ -90,12 +90,6 @@ Custom fastfetch configuration showing:
 - Fastfetch runs automatically on terminal open
 - Tor Browser alias for Wayland compatibility
 
-### MilitechOS Branding
-- Hostname set to `militechos`
-- OS name set to `MilitechOS` in all system tools
-- GRUB bootloader branded as MilitechOS
-- Removes all Arch Linux references from user-facing UI
-
 ---
 
 ## What's Included
