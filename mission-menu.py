@@ -79,6 +79,24 @@ window {
     background-color: #0A0A0A;
     border: 2px solid #FFD300;
 }
+headerbar {
+    background-color: #0A0A0A;
+    color: #FFD300;
+    border-bottom: 1px solid #FFD300;
+}
+headerbar .title {
+    color: #FFD300;
+    font-family: 'DejaVu Sans Mono';
+    letter-spacing: 2px;
+}
+headerbar button {
+    background-color: #0A0A0A;
+    color: #FFD300;
+    border: 1px solid #FFD300;
+}
+headerbar button:hover {
+    background-color: #1A1A00;
+}
 #title {
     color: #FFD300;
     font-size: 24px;
@@ -127,11 +145,14 @@ scrolledwindow {
 
 class MissionMenu(Gtk.Window):
     def __init__(self):
-        super().__init__(title="MISSION MENU")
+        GLib.set_prgname("militech-mission")
+        GLib.set_application_name("Mission Control")
+        super().__init__(title="MISSION CONTROL // MILITECH OS")
         self.set_default_size(400, 600)
         self.set_position(Gtk.WindowPosition.CENTER)
-        self.set_decorated(False)
+        self.set_decorated(True)
         self.set_keep_above(True)
+        self.set_icon_from_file("/usr/share/icons/militech/militech.png")
 
         style_provider = Gtk.CssProvider()
         style_provider.load_from_data(CSS)

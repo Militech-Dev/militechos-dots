@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Mission Control
+Comment=MilitechOS Mission Menu
+Exec=python3 /home/exec/.config/militechos/mission-menu.py
+Icon=/usr/share/icons/militech/militech.png
+Terminal=false
+Type=Application
+Categories=System;
+StartupWMClass=militech-mission
