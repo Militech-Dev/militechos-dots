@@ -17,7 +17,7 @@ For a full automated installation see the
 [MilitechOS Installer](https://github.com/Militech-Dev/militechos-iso).
 
 > **Operator Edition** — A full cybersecurity and penetration testing edition 
-> combining tools from Kali Linux and Parrot OS is coming soon.
+> is coming soon.
 
 ---
 
